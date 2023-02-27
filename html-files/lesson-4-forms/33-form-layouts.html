@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bootstrap document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <style>
+        .w-10 {
+            width: 30rem;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello, World!</h1>
+
+<div class="container w-10 bg-info p-3 ">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <form name="sign_up_form" onsubmit="checkFields(); return false;">
+                <span class="display-4">Sign up</span>
+                <div class="row my-3">
+                    <div class="col-md-6 form-floating p-1">
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="your name here..">
+                        <label for="first_name">First name</label>
+                    </div>
+                    <div class="col-md-6 form-floating p-1">
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="your name here..">
+                        <label for="last_name">Last name</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6 form-floating p-1">
+                        <input type="text" class="form-control" id="email" placeholder="your email here..">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-md-6 form-floating p-1">
+                        <input type="text" class="form-control" id="phone_num"
+                               placeholder="your phone number here..">
+                        <label for="phone_num">Phone number</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-12 p-1">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" id="address" rows="3"
+                                  placeholder="148 Hamadani, Mecca St. Amman, Jordan."></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-5 form-floating p-1">
+                        <input type="text" class="form-control" id="city" placeholder="city..">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="col-md-4 form-floating p-1">
+                        <select class="form-select" id="state">
+                            <option value="-1">Select..</option>
+                            <option value="One">One</option>
+                            <option value="Two">Two</option>
+                            <option value="Three">Three</option>
+                            <option value="Four">Four</option>
+                        </select>
+                        <label for="state">State</label>
+                    </div>
+                    <div class="col-md-3 form-floating p-1">
+                        <input type="text" class="form-control" id="zipCode"
+                               placeholder="zipcode..">
+                        <label for="zipCode">ZipCode</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-12 form-check">
+                        <input type="checkbox" class="form-check-input" id="check" placeholder="city..">
+                        <label for="check" class="form-check-label">Check me!</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success" id="sign-up">
+                        <label for="sign-up" class="form-check-label"></label>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"/>
+
+<script>
+    // var u_name = document.sign_up_form.first_name,
+    //     l_name = document.sign_up_form.last_name;
+
+    function checkFields() {
+        // TODO check why it's not working!
+        alert("HI");
+        // if (u_name.value === '') {
+        //     console.log("empty!!!");
+        //     u_name.classList.add('is-invalid');
+        // } else {
+        //     u_name.classList.remove('is-invalid');
+        //     u_name.classList.add('is-valid');
+        // }
+        //
+        // if (l_name.value === '') {
+        //     l_name.classList.add('is-invalid');
+        // } else {
+        //     l_name.classList.remove('is-invalid');
+        //     l_name.classList.add('is-valid');
+        // }
+
+        // if(u_name.value === '' || l_name.value === '') {
+        //     return false;
+        // }
+    }
+</script>
+</body>
+</html>
